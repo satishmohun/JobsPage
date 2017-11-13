@@ -126,6 +126,17 @@ body .main-container {
         border-radius: 1px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     }
+	
+	header .logo {
+		width: 100%;
+		display: inline-block;
+		position: relative;
+		margin-top: 11px;
+		margin-bottom: 11px;
+		margin-right: 0px;
+		top: 0;
+		left: 0;
+	}
 }
 
 
