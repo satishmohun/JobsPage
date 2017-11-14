@@ -126,17 +126,17 @@ body .main-container {
         border-radius: 1px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     }
-	
-	header .logo {
-		width: 100%;
-		display: inline-block;
-		position: relative;
-		margin-top: 11px;
-		margin-bottom: 11px;
-		margin-right: 0px;
-		top: 0;
-		left: 0;
-	}
+
+    header .logo {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        margin-right: 0px;
+        top: 0;
+        left: 0;
+    }
 }
 
 
@@ -144,4 +144,125 @@ body .main-container {
     .side-content img {
         width: 106%;
     }
+}
+
+/**** LAYOUT ****/
+.list-inline > li {
+    padding: 0 10px 0 0;
+}
+
+.container-pad {
+    padding: 30px 15px;
+}
+
+
+/**** MODULE ****/
+.bgc-fff {
+    /*background-color: #e0e0e0ab !important;*/
+    background: linear-gradient( to right, #d6d6d6bf, #1abc9c2e );
+}
+
+.box-shad {
+    -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+
+.brdr {
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+}
+
+/* Font changes */
+.fnt-smaller {
+    font-size: .9em;
+}
+
+.fnt-lighter {
+    color: #bbb;
+}
+
+/* Padding - Margins */
+.pad-10 {
+    padding: 10px !important;
+}
+
+.mrg-0 {
+    margin: 0 !important;
+}
+
+.btm-mrg-10 {
+    margin-bottom: 10px !important;
+}
+
+.btm-mrg-20 {
+    margin-bottom: 20px !important;
+}
+
+/* Color  */
+.clr-535353 {
+    color: #535353;
+}
+
+
+
+
+/**** MEDIA QUERIES ****/
+@media only screen and (max-width: 991px) {
+    #property-listings .property-listing {
+        padding: 5px !important;
+    }
+
+        #property-listings .property-listing a {
+            margin: 0;
+        }
+
+        #property-listings .property-listing .media-body {
+            padding: 10px;
+        }
+}
+
+@media only screen and (min-width: 992px) {
+    #property-listings .property-listing img {
+        max-width: 180px;
+    }
+}
+
+.property-listing:hover {
+    /* Webkit for Chrome and Safari */
+    -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition-duration: 500ms;
+    -webkit-transition-timing-function: ease-in;
+    /* Webkit for Mozila Firefox */
+    -moz-transform: scale(1.1, 1.1);
+    -moz-transition-duration: 500ms;
+    -moz-transition-timing-function: ease-in;
+    /* Webkit for IE( Version: 11, 10 ) */
+    -ms-transform: scale(1.10, 1.10);
+    -ms-transition-duration: 500ms;
+    -ms-transition-timing-function: ease-in;
+    opacity: 0.7;
+}
+
+.property-listing .btn-content {
+    float: left;
+    margin-right: 7px;
+}
+
+.btn-view-details {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: 'Open Sans','sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 40px;
+    background-color: #1abc9c;
+}
+.employer_details_txt{
+    padding-top: 10px;
+}
+
+.property-listing {
+    cursor: pointer;
 }
