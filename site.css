@@ -331,3 +331,54 @@ header .shareIcons {
 .page {
     display: none;
 }
+
+@media (min-width: 768px) {
+    .width-53 {
+        width: 53.5%;
+    }
+}
+
+@media (max-width: 991px) {
+    .listing .btn-content {
+        width: 100%;
+    }
+
+    .btn-view-details {
+        width: 70%;
+    }
+}
+
+@media (max-width: 991px) {
+    .listing .btn-content {
+        width: inherit;
+    }
+
+    .btn-view-details {
+        width: 100%;
+    }
+}
+
+@media (max-width: 584px) {
+    .listing {
+        text-align: left;
+    }
+
+        .listing .btn-content {
+            width: 100%;
+        }
+
+    .btn-view-details {
+        width: 72%;
+    }
+}
+
+@media (max-width: 376px) {
+    .btn-view-details {
+        width: 100%;
+    }
+}
+@media (max-width: 296px) {
+    .listing .btn-content {
+        width: inherit;
+    }
+}
